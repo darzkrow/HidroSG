@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Accesos</title>
+</head>
+<body>
+    <h1>Lista de Accesos</h1>
+    <ul>
+    {% for access in accesses %}
+        <li>{{ access.VisitorID }} - {{ access.entry }} - {{ access.hours }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
